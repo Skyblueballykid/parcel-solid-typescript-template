@@ -9,7 +9,7 @@ export type AppContext = [
   }
 ];
 
-export const context = createContext<AppContext>();
+const context = createContext<AppContext>();
 
 const getInitialAppState = (): AppState => {
   let state: AppState | null = null;
@@ -17,7 +17,7 @@ const getInitialAppState = (): AppState => {
   return state || new AppState();
 };
 
-export function AppProvider(props: any) {
+export function AppContextProvider(props: any) {
   const [state, setState] = createState<AppState>(getInitialAppState());
   const store: AppContext = [
     state,

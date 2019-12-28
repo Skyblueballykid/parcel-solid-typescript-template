@@ -1,14 +1,16 @@
+// styles:
+import "materialize-css/dist/css/materialize.min.css";
+
 import { render } from "solid-js/dom";
-import { Counter } from "./components";
-import { AppProvider } from "./lib/context/app-context";
+import { Counter, Header } from "./components";
+import { AppContextProvider } from "./lib/context/app-context";
 
 const Index = () => {
   return (
-    <div>
-      <AppProvider>
-        <Counter></Counter>
-      </AppProvider>
-    </div>
+    <AppContextProvider>
+      <Header></Header>
+      <Counter></Counter>
+    </AppContextProvider>
   );
 };
 
