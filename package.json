@@ -1,0 +1,31 @@
+{
+  "name": "solid-parcel-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html --https",
+    "build": "parcel build ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "Chrome 74",
+    "Firefox 63",
+    "Safari 11",
+    "Edge 17",
+    "Node 10"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-plugin-jsx-dom-expressions": "^0.14.11",
+    "parcel": "^1.12.4",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "babel-preset-solid": "^0.15.4",
+    "solid-js": "^0.15.4"
+  }
+}
