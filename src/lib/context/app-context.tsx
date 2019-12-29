@@ -9,14 +9,13 @@ export type AppContext = [
   }
 ];
 
-const context = createContext<AppContext>();
-
 const getInitialAppState = (): AppState => {
   let state: AppState | null = null;
   //TODO: Load state from backend, cookies or localstorage
   return state || new AppState();
 };
 
+const Context = createContext<AppContext>();
 export function AppContextProvider(props: any) {
   const [state, setState] = createState<AppState>(getInitialAppState());
   const store: AppContext = [
@@ -26,7 +25,7 @@ export function AppContextProvider(props: any) {
     }
   ];
 
-  return <context.Provider value={store}>{props.children}</context.Provider>;
+  return <Context.Provider value={store}>{props.children}</Context.Provider>;
 }
 
-export const getAppContext = (): AppContext => useContext<AppContext>(context);
+export const getAppContext = (): AppContext => useContext<AppContext>(Context);
