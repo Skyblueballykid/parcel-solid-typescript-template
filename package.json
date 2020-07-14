@@ -24,7 +24,7 @@
     "babel-preset-solid": "^0.17.0",
     "parcel": "^1.12.4",
     "sass": "^1.24.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.6"
   },
   "dependencies": {
     "materialize-css": "^1.0.0",
