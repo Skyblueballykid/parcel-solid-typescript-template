@@ -22,14 +22,15 @@
     "@babel/preset-env": "^7.10.4",
     "babel-plugin-jsx-dom-expressions": "^0.19.9",
     "babel-preset-solid": "^0.18.14",
+    "browserslist": "4.13.0",
+    "caniuse-lite": "1.0.30001099",
+    "node-forge": "^0.10.0",
     "parcel": "^1.12.4",
     "sass": "^1.26.10",
-    "typescript": "^3.9.6",
-    "caniuse-lite": "1.0.30001099",
-    "browserslist": "4.13.0"
+    "typescript": "^3.9.6"
   },
   "dependencies": {
     "materialize-css": "^1.0.0",
-    "solid-js": "^0.18.14"
+    "solid-js": "^0.20.2"
   }
 }
