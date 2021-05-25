@@ -22,7 +22,7 @@
     "@babel/preset-env": "^7.11.5",
     "babel-plugin-jsx-dom-expressions": "^0.21.1",
     "babel-preset-solid": "^0.20.2",
-    "browserslist": "4.13.0",
+    "browserslist": "4.16.5",
     "caniuse-lite": "1.0.30001099",
     "node-forge": "^0.10.0",
     "parcel": "^1.12.4",
